@@ -3,6 +3,17 @@ import React from 'react';
 import '../styles/Navbar.css';
 import '../styles/all.css';
 import '../App.css';
+import { Link, Route, Routes } from 'react-router-dom';
+import Home from '../Pages/Home.js';
+
+function Locations() {
+    return(
+        <Routes>
+            <Route path='../Pages/Home.js' element={<Home/>}/>
+            <Route path='../Pages/Projects.js' element={<Projects/>}/>
+        </Routes>
+    );
+}
 
 export default function Navbar() {
     return (
@@ -36,7 +47,7 @@ export default function Navbar() {
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-home"></i>
                                 </div>
-                                <span className="link-text">Home</span>
+                                <span className="link-text"><Link to='../Pages/Home.js'>Home</Link></span>
                             </a>
                         </li>
                         <li className="navbar-item flexbox-left">
@@ -44,7 +55,7 @@ export default function Navbar() {
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-folder"></i>
                                 </div>
-                                <span className="link-text">Projects</span>
+                                <span className="link-text"><Link to='../Pages/Projects.js'>Projects</Link></span>
                             </a>
                         </li>
                         <li className="navbar-item flexbox-left">
@@ -52,7 +63,7 @@ export default function Navbar() {
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-chart-pie"></i>
                                 </div>
-                                <span className="link-text">Dashboard</span>
+                                <span className="link-text"><Link to='../Pages/Dashboard.js'>Dashboard</Link></span>
                             </a>
                         </li>
                         <li className="navbar-item flexbox-left">
@@ -60,7 +71,7 @@ export default function Navbar() {
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-screen-users"></i>
                                 </div>
-                                <span className="link-text">Our Team</span>
+                                <span className="link-text"><Link to='../Pages/Teams.js'>Our Team</Link></span>
                             </a>
                         </li>
                         <li className="navbar-item flexbox-left">
@@ -68,7 +79,7 @@ export default function Navbar() {
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-message-lines"></i>
                                 </div>
-                                <span className="link-text">Contact Us</span>
+                                <span className="link-text"><Link to='../Pages/Contact.js'>Contact Us</Link></span>
                             </a>
                         </li>
                         <li className="navbar-item flexbox-left">
