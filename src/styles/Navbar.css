@@ -118,6 +118,15 @@ button:focus {
 
 ul, ol {
     margin: 1em 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
 }
 
 /* =======
@@ -332,10 +341,10 @@ select {
     Main
    ====== */
 
-#main {
+/* #main {
     margin: 0 0 0 5em;
     min-height: 100vh;
-}
+} */
 
 
 /* =============

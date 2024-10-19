@@ -3,19 +3,12 @@ import React from 'react';
 import '../styles/Navbar.css';
 import '../styles/all.css';
 import '../App.css';
-import { Link, Route, Routes } from 'react-router-dom';
-import Home from '../Pages/Home.js';
+import { Link } from 'react-router-dom';
 
-function Locations() {
-    return(
-        <Routes>
-            <Route path='../Pages/Home.js' element={<Home/>}/>
-            <Route path='../Pages/Projects.js' element={<Projects/>}/>
-        </Routes>
-    );
-}
 
-export default function Navbar() {
+
+
+export default function Navbar(props) {
     return (
             <>
                 {/* Navbar */}
@@ -35,52 +28,52 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <a className="navbar-item-inner flexbox-left">
+                            <span className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-magnifying-glass"></i>
                                 </div>
                                 <span className="link-text">Search</span>
-                            </a>
+                            </span>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <a className="navbar-item-inner flexbox-left">
+                            <span className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-home"></i>
                                 </div>
-                                <span className="link-text"><Link to='../Pages/Home.js'>Home</Link></span>
-                            </a>
+                                <span className="link-text"><Link to='/Home'>Home</Link></span>
+                            </span>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <a className="navbar-item-inner flexbox-left">
+                            <span className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-folder"></i>
                                 </div>
-                                <span className="link-text"><Link to='../Pages/Projects.js'>Projects</Link></span>
-                            </a>
+                                <span className="link-text"><Link to='/Projects'>Projects</Link></span>
+                            </span>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <a className="navbar-item-inner flexbox-left">
+                            <span className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-chart-pie"></i>
                                 </div>
-                                <span className="link-text"><Link to='../Pages/Dashboard.js'>Dashboard</Link></span>
-                            </a>
+                                <span className="link-text"><Link to='/Dashboard'>Dashboard</Link></span>
+                            </span>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <a className="navbar-item-inner flexbox-left">
+                            <span className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-screen-users"></i>
                                 </div>
-                                <span className="link-text"><Link to='../Pages/Teams.js'>Our Team</Link></span>
-                            </a>
+                                <span className="link-text"><Link to='/Teams'>Our Team</Link></span>
+                            </span>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <a className="navbar-item-inner flexbox-left">
+                            <span className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-message-lines"></i>
                                 </div>
-                                <span className="link-text"><Link to='../Pages/Contact.js'>Contact Us</Link></span>
-                            </a>
+                                <span className="link-text"><Link to='/Contact'>Contact Us</Link></span>
+                            </span>
                         </li>
                         <li className="navbar-item flexbox-left">
                             <a className="navbar-item-inner flexbox-left">
@@ -93,9 +86,12 @@ export default function Navbar() {
                     </ul>
                 </nav>
                 {/* Main */}
-                <main id="main" className="flexbox-col">
-                
-                </main>
+                {/* <main id="main" className="flexbox-col">
+
+                </main> */}
+                <div>
+                    {props.location}
+                </div>
             </>
     );
 }

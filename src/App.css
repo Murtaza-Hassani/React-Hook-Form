@@ -4,7 +4,16 @@
   box-sizing: border-box;
   /* font-family: 'JetBrains Mono','Courier New', Courier, monospace; */
 }
+
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
  
+ul li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none; 
 }
