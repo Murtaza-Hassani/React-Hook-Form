@@ -28,52 +28,52 @@ export default function Navbar(props) {
                             </a>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <span className="navbar-item-inner flexbox-left">
+                            <a className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-magnifying-glass"></i>
                                 </div>
                                 <span className="link-text">Search</span>
-                            </span>
+                            </a>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <span className="navbar-item-inner flexbox-left">
+                            <Link to='/Home' className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-home"></i>
                                 </div>
-                                <span className="link-text"><Link to='/Home'>Home</Link></span>
-                            </span>
+                                <span className="link-text">Home</span>
+                            </Link>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <span className="navbar-item-inner flexbox-left">
+                            <Link to='/Projects' className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-folder"></i>
                                 </div>
-                                <span className="link-text"><Link to='/Projects'>Projects</Link></span>
-                            </span>
+                                <span className="link-text">Projects</span>
+                            </Link>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <span className="navbar-item-inner flexbox-left">
+                            <Link to='/Dashboard' className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-chart-pie"></i>
                                 </div>
-                                <span className="link-text"><Link to='/Dashboard'>Dashboard</Link></span>
-                            </span>
+                                <span className="link-text">Dashboard</span>
+                            </Link>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <span className="navbar-item-inner flexbox-left">
+                            <Link to='/Teams' className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-screen-users"></i>
                                 </div>
-                                <span className="link-text"><Link to='/Teams'>Our Team</Link></span>
-                            </span>
+                                <span className="link-text">Our Team</span>
+                            </Link>
                         </li>
                         <li className="navbar-item flexbox-left">
-                            <span className="navbar-item-inner flexbox-left">
+                            <Link to='/Contact' className="navbar-item-inner flexbox-left">
                                 <div className="navbar-item-inner-icon-wrapper flexbox">
                                 <i className="fa-light fa-message-lines"></i>
                                 </div>
-                                <span className="link-text"><Link to='/Contact'>Contact Us</Link></span>
-                            </span>
+                                <span  className="link-text">Contact Us</span>
+                            </Link>
                         </li>
                         <li className="navbar-item flexbox-left">
                             <a className="navbar-item-inner flexbox-left">

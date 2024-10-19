@@ -119,15 +119,9 @@ button:focus {
 ul, ol {
     margin: 1em 0;
     list-style: none;
-}
-
-a {
     text-decoration: none;
 }
 
-ul li {
-    list-style: none;
-}
 
 /* =======
     Forms
@@ -300,6 +294,10 @@ select {
     padding: 0 .5em;
     width: 100%;
     cursor: pointer;
+}
+
+.navbar-item a {
+    color: hsl(var(--quite-gray));
 }
 .navbar-item-inner {
     padding: 1em 0;
